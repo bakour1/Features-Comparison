@@ -59,7 +59,7 @@ ul {
 .container header h3::after {
   content: '';
   width: 2.5rem;
-  height: 100%;
+  height: 2.5rem;
   background-color: #F6F6F6;
   position: absolute;
   top: 50%;
