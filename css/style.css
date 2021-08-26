@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+html {
+  /* font-size: 8px; */
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  background-color: #F6F6F6;
+  padding: .9375rem 2.5rem 3.75rem;
+}
+
+.container header {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container header h3 {
+  padding: .625rem 1.25rem;
+  padding-right: 2.5rem;
+  width: fit-content;
+  background-color: #2196F3;
+  color: #fff;
+  position: relative;
+}
+
+.container header h3::after {
+  content: '';
+  width: 2.5rem;
+  height: 100%;
+  background-color: #F6F6F6;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%) rotate(45deg);
+  -webkit-transform: translate(50%, -50%) rotate(45deg);
+  -moz-transform: translate(50%, -50%) rotate(45deg);
+  -ms-transform: translate(50%, -50%) rotate(45deg);
+  -o-transform: translate(50%, -50%) rotate(45deg);
+}
+
+.container main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24.375rem, 1fr));
+  gap: 1.25rem;
+}
+
+
+@media (max-width:500px) {
+  .container main {
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
+  }
+}
+
+.container main section {
+  background-color: #fff;
+}
+
+
+.container main section h3 {
+  width: 100%;
+  height: 3.125rem;
+  color: #fff;
+  line-height: 3.125rem;
+  padding-left: 1.25rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.container main section.basic h3 {
+  background-color: #F44336;
+}
+
+.container main section.pro h3 {
+  background-color: #2196F3;
+}
+
+.container main section li {
+  height: 3rem;
+  padding-block: 2rem;
+  line-height: 1.7;
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.container main section li span {
+  margin-left: 1.25rem;
+  margin-right: 0.5rem;
+  min-width: 1.1rem;
+  height: 1.1rem;
+  position: relative;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+}
+
+.container main section li span.true {
+  background-color: #009688;
+}
+
+.container main section li span.true::after {
+  content: '';
+  width: 54%;
+  height: 14%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-0.13125rem, -24%) rotate(-45deg);
+  -webkit-transform: translate(-0.13125rem, -24%) rotate(-45deg);
+  -moz-transform: translate(-0.13125rem, -24%) rotate(-45deg);
+  -ms-transform: translate(-0.13125rem, -24%) rotate(-45deg);
+  -o-transform: translate(-0.13125rem, -24%) rotate(-45deg);
+}
+
+.container main section li span.true::before {
+  content: '';
+  width: 35%;
+  height: 14%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-0.5rem, 33%) rotate(45deg);
+  -webkit-transform: translate(-0.5rem, 33%) rotate(45deg);
+  -moz-transform: translate(-0.5rem, 33%) rotate(45deg);
+  -ms-transform: translate(-0.5rem, 33%) rotate(45deg);
+  -o-transform: translate(-0.5rem, 33%) rotate(45deg);
+}
+
+.container main section li span.false {
+  background-color: #E91E63;
+}
+
+.container main section li span.false::before {
+  content: '';
+  width: 60%;
+  height: 10%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(50%, -50%) rotate(-45deg);
+  -moz-transform: translate(50%, -50%) rotate(-45deg);
+  -ms-transform: translate(50%, -50%) rotate(-45deg);
+  -o-transform: translate(50%, -50%) rotate(-45deg);
+}
+
+.container main section li span.false::after {
+  content: '';
+  width: 60%;
+  height: 10%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%) rotate(45deg);
+  -webkit-transform: translate(50%, -50%) rotate(45deg);
+  -moz-transform: translate(50%, -50%) rotate(45deg);
+  -ms-transform: translate(50%, -50%) rotate(45deg);
+  -o-transform: translate(50%, -50%) rotate(45deg);
+}
