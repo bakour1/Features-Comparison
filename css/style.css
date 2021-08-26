@@ -22,10 +22,20 @@ ul {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   margin: auto;
   background-color: #F6F6F6;
   padding: .9375rem 2.5rem 3.75rem;
+  overflow: hidden;
+}
+
+@media (max-width:500px) {
+  .container {
+    width: 85%;
+    margin: auto;
+    background-color: #F6F6F6;
+    padding: .9375rem .625rem;
+  }
 }
 
 .container header {
